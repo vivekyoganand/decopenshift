@@ -1,0 +1,11 @@
+  1  cd
+    2  yum install docker -y
+    3  systemctl start service 
+    4  systemctl start docker
+    5  docker pull httpd
+    6  docker images
+    7  docker run -it httpd
+    8  docker run -itd httpd
+    9  docker ps
+   10  docker run -itd -p 9090:80 httpd
+   11  history 
