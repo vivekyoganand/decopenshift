@@ -1,0 +1,22 @@
+160  crictl ps | grep -i api
+  161  sudo crictl ps | grep -i api
+  162  sudo crictl ps | grep -i controller
+  163  sudo crictl ps | grep -i etcd
+  164  exit
+  165  sudo crictl ps | grep -i api
+  166  sudo crictl ps | grep -i etcd
+  167  sudo crictl ps 
+  168  sudo crictl ps | grep etcd
+  169  sudo crictl ps | grep scheduler
+  170  ps -ef 
+  171  ps -ef | grep scheduler
+  172  sudo crictl ps | grep scheduler
+  173  ps -ef | grep kube-scheduler
+  174  sudo crictl ps | grep scheduler
+  175  exit
+  176  oc get nodes
+  177  exit
+  178  sudo crictl ps | grep control
+  179  sudo crictl ps | grep kube-controller-manager
+  180  sudo crictl ps | grep control
+  181  sudo crictl ps | grep kube
