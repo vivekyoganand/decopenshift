@@ -1,0 +1,31 @@
+1001  oc get nodes
+ 1002  oc get no
+ 1003  oc get node
+ 1004  oc get no
+ 1005  oc adm top nodes
+ 1006  oc get pods -A | grep -i worker-0 | wc -l
+ 1007  oc get pods -A | grep -i worker-0
+ 1008  oc get pods -A 
+ 1009  oc get pods -A -o wide | grep -i worker-0
+ 1010  oc get pods -A -o wide | grep -i worker-0 | wc -l
+ 1011  oc get pods -A -o wide | grep -i worker-1 | wc -l
+ 1012  oc get pods -A -o wide | grep -i worker-2 | wc -l
+ 1013  oc get pods -A -o wide | grep -i worker-2 
+ 1014  oc adm top nodes
+ 1015  oc describe node/worker-2.vyoganan.lab.psi.pnq2.redhat.com
+ 1016  oc get clusterversion
+ 1017  oc version
+ 1018  oc describe clusterversion
+ 1019  oc get clusteroperators
+ 1020  oc project authentication
+ 1021  oc project openshift-authentication-operator
+ 1022  oc get pods
+ 1023  oc project openshift-authentication
+ 1024  oc get pods
+ 1025  oc project
+ 1026  oc get events
+ 1027  oc logs pod/oauth-openshift-5677d86d64-fntsm | tail
+ 1028  oc logs pod/oauth-openshift-5677d86d64-fntsm | grep -i error
+ 1029  oc logs pod/oauth-openshift-5677d86d64-fntsm | grep -i warning
+ 1030  oc logs pod/oauth-openshift-5677d86d64-fntsm | grep -i fail
+ 1031  oc logs pod/oauth-openshift-5677d86d64-fntsm | grep -i server
