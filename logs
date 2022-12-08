@@ -1,0 +1,86 @@
+958  oc get nodes
+  959  oc get no
+  960  oc get node
+  961  oc get no
+  962  oc adm top nodes
+  963  oc get pods -A | grep -i worker-0 | wc -l
+  964  oc get pods -A | grep -i worker-0
+  965  oc get pods -A 
+  966  oc get pods -A -o wide | grep -i worker-0
+  967  oc get pods -A -o wide | grep -i worker-0 | wc -l
+  968  oc get pods -A -o wide | grep -i worker-1 | wc -l
+  969  oc get pods -A -o wide | grep -i worker-2 | wc -l
+  970  oc get pods -A -o wide | grep -i worker-2 
+  971  oc adm top nodes
+  972  oc describe node/worker-2.vyoganan.lab.psi.pnq2.redhat.com
+  973  oc get clusterversion
+  974  oc version
+  975  oc describe clusterversion
+  976  oc get clusteroperators
+  977  oc project authentication
+  978  oc project openshift-authentication-operator
+  979  oc get pods
+  980  oc project openshift-authentication
+  981  oc get pods
+  982  oc project
+  983  oc get events
+  984  oc logs pod/oauth-openshift-5677d86d64-fntsm | tail
+  985  oc logs pod/oauth-openshift-5677d86d64-fntsm | grep -i error
+  986  oc logs pod/oauth-openshift-5677d86d64-fntsm | grep -i warning
+  987  oc logs pod/oauth-openshift-5677d86d64-fntsm | grep -i fail
+  988  oc logs pod/oauth-openshift-5677d86d64-fntsm | grep -i server
+  989  history 
+  990  oc login --token=sha256~RZ7KF_O6x88ahbbzRnbBooQeonSmq6-FB6CZ6YWg904 --server=https://api.vyoganan.lab.psi.pnq2.redhat.com:6443
+  991  oc get nodes
+  992  oc adm node-logs -u crio master-0.vyoganan.lab.psi.pnq2.redhat.com
+  993  oc adm node-logs -u crio master-0.vyoganan.lab.psi.pnq2.redhat.com | tail -n 1
+  994  oc adm node-logs -u crio master-0.vyoganan.lab.psi.pnq2.redhat.com | tail -n 2
+  995  oc adm node-logs --help
+  996  oc get nodes
+  997  oc debug node/master-0.vyoganan.lab.psi.pnq2.redhat.com
+  998  oc debug node/worker-2.vyoganan.lab.psi.pnq2.redhat.com
+  999  systemctl --help
+ 1000  oc login --token=sha256~UEGgmdS2Xvd1L6CWGSxJ2e_Bfx58ueXmE70FQb7WFFg --server=https://api.vyoganan.lab.psi.pnq2.redhat.com:6443
+ 1001  oc get nodes
+ 1002  oc get nodes -o wide
+ 1003  oc get nodes
+ 1004  oc new-project webserver
+ 1005  oc project
+ 1006  oc new-app --name webserver_httpd_vivek httpd
+ 1007  oc new-app --name webserverhttpdvivek httpd
+ 1008  oc get pods
+ 1009  oc get service
+ 1010  oc get all
+ 1011  oc get route
+ 1012  oc expose service/webserverhttpdvivek
+ 1013  oc get route
+ 1014  oc get pods
+ 1015  oc rsh pod/webserverhttpdvivek-6c448f5cd-mg6zm
+ 1016  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 6
+ 1017  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 10
+ 1018  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 6
+ 1019  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 10
+ 1020  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 10 | grep -i error
+ 1021  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 10 > log_10.txt
+ 1022  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 10 >. log_10.txt
+ 1023  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 10 >> log_10.txt
+ 1024  ls -ltr
+ 1025  cat log_10.txt
+ 1026  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 10 | grep -i error
+ 1027  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 6 | grep -i error
+ 1028  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 7 | grep -i error
+ 1029  oc get pod/webserverhttpdvivek-6c448f5cd-mg6zm --loglevel 8 | grep -i error
+ 1030  oc whoami -t
+ 1031  oc get co
+ 1032  oc project openshift-monitoring
+ 1033  oc get pods
+ 1034  oc project webserver 
+ 1035  oc get pods
+ 1036  oc adm node-logs --tail 1 -u kubelet master01
+ 1037  oc get nodes
+ 1038  oc adm node-logs --tail 1 -u kubelet master-1.vyoganan.lab.psi.pnq2.redhat.com
+ 1039  oc get nodes
+ 1040  oc debug node/master-0.vyoganan.lab.psi.pnq2.redhat.com
+ 1041  oc get node
+ 1042  oc debug node/worker-2.vyoganan.lab.psi.pnq2.redhat.com
+ 1043  history 
