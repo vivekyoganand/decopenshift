@@ -1,0 +1,34 @@
+85  oc project openshift-console
+   86  oc get pods
+   87  oc describe pod/console-67f6bdf648-c77k7 | grep -i scc
+   88  oc project openshift-dns
+   89  oc get pods
+   90  oc describe pod/dns-default-lsjlq | grep -i scc
+   91  oc describe pod/node-resolver-22h8t | grep -i scc
+   92  oc project openshift-network
+   93  oc project openshift-network-operator
+   94  oc get pods
+   95  oc describe pod/network-operator-5d797c9978-gfwkc | grep -i scc
+   96  oc get co | grep -i console 
+   97  oc get co | grep -i authentication
+   98  oc get co | grep -i dns
+   99  oc get co | grep -i network
+  100  oc get co | grep -i storage
+  101  oc get co | grep -i api
+  102  oc adm  policy 
+  103  oc new-project authorization-scc
+  104  oc new-app --name gitlab --image gitlab/gitlab-ce:8.4.3-ce.0
+  105  oc new-app --name gitlab --image gitlab
+  106  oc new-app --name gitlab --image httpd
+  107  oc new-app --name gitlab gitlab
+  108  oc new-app --name gitlab httpd
+  109  oc get pods
+  110  oc get pod/gitlab-5c8b6476c8-z692f -o yaml
+  111  oc get pod/gitlab-5c8b6476c8-z692f -o yaml | oc adm policy scc-subject-review -f -
+  112  oc create sa gitlab-sa
+  113  oc adm  policy add-scc-to-user anyuid -z gitlab-sa
+  114  oc get deploy
+  115  oc set serviceaccount deployment/gitlab gitlab-sa
+  116  oc get pods
+  117  oc get pod/gitlab-545bb59bbd-5g7r9 -o yaml | oc adm policy scc-subject-review -f -
+  118  history 
