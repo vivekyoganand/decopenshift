@@ -1,0 +1,4 @@
+   64  openssl genrsa -out ca.key 2048
+   68  openssl req -x509  -new -nodes  -days 365  -key ca.key  -out ca.crt  -subj "/CN=redhats.com"
+   71  openssl req -x509  -new -nodes  -days 365  -key ca.key  -out vivek.crt 
+  174  history | grep -i openssl
