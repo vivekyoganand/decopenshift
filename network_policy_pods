@@ -1,0 +1,48 @@
+Ref: https://access.redhat.com/documentation/en-us/openshift_container_platform/4.8/html-single/networking/index
+
+$ oc new-app --name hello --docker-image quay.io/redhattraining/hello-world-nginx:v1.0
+
+$ oc new-app --name test --docker-image quay.io/redhattraining/hello-world-nginx:v1.0
+
+$ oc rsh test-7c74fd99fd-97q9x curl 10.131.1.36:8080 | grep Hello
+
+Pod IP Address
+===================
+Hello - 10.131.1.35 >> curl 10.131.1.36:8080 >> Success
+$ oc rsh test-7c74fd99fd-97q9x curl 10.131.1.36:8080 | grep Hello
+
+Test - 10.131.1.36   >>  curl 10.131.1.35:8080 >> Success
+
+Service IP Address
+=====================
+
+Hello - 172.30.177.187
+
+Test - 172.30.44.41 >> curl 172.30.177.187:8080 >> Success
+$ oc rsh test-7c74fd99fd-97q9x curl 172.30.177.187:8080 | grep -i hello
+
+Deny-All
+========
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: deny-by-default
+spec:
+  podSelector: {}
+  ingress: []
+  
+  
+  
+Allow the poods in the project
+=================================
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-same-namespace
+spec:
+  podSelector: {}
+  ingress:
+  - from:
+    - podSelector: {}
+    
+    
