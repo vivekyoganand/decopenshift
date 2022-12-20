@@ -1,0 +1,38 @@
+221  oc get no
+  222  oc get po
+  223  oc get no --show-labels 
+  224  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com --show-labels 
+  225  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com --list-labels
+  226  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com --help
+  227  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com --list label
+  228  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com --show-labels 
+  229  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com --help
+  230  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com --show-labels 
+  231  oc label node/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com owner=sakthiman
+  232  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com --show-labels 
+  233  oc label node/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com env=prod
+  234  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com --show-labels 
+  235  oc get nodes
+  236  oc get nodes --show-labels 
+  237  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com -L env
+  238  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com -L owner
+  239  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com -L vivke
+  240  oc get no/worker-1.vyoganan4.lab.upshift.rdu2.redhat.com -L viek
+  241  oc get no -L vivek
+  242  oc get no -L env
+  243  oc get no -L owner
+  244  oc get no -L sakthiman
+  245  oc get ms
+  246  oc get mcp
+  247  oc get mc
+  248  oc get pods
+  249  oc get pods -o wide
+  250  oc get pods
+  251  oc get nodes -o wide
+  252  oc label node/worker-0.vyoganan4.lab.upshift.rdu2.redhat.com env=dev
+  253  oc get pods
+  254  oc get deployment
+  255  oc edit deployment/hello 
+  256  oc get pods
+  257  oc get pods -o wide
+  258  history 
